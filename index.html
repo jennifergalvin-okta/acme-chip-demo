@@ -34,6 +34,9 @@
     },
 
     helpLinks: {
+	custom: [
+      		{ text: 'Manage Account / Factors', href: 'https://jgalvin.okta.com' }
+        ],
 	help: '/static/help.html',
 	forgotPassword:  '/static/forgotPassword.html',
 	unlock: '/static/unlock.html'
@@ -56,7 +59,7 @@
       function (res) {
         if (res.status === 'SUCCESS') 
 	{ 
-		res.session.setCookieAndRedirect('https://jgalvin.okta.com'); 
+		res.session.setCookieAndRedirect('https://portal.galvin.ninja/storefront.html'); 
 	}
         else {res.session.setCookieAndRedirect('http://i.imgur.com/METstiD.gif'); }
       }
